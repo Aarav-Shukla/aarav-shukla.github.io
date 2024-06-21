@@ -12,401 +12,392 @@
     <title>Aarav Shukla | My Site</title>
     <style>
         /*FONT*/
-        .noto-sans-mono {
-            font-family: "Noto Sans Mono", monospace;
-            font-optical-sizing: auto;
-            font-weight: 400;
-            font-style: normal;
-        }
-
-        /*GRID & BACKGROUND*/
-        body {
-            background-image: url(bgimage.jpeg);
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            display: grid;
-            place-items: center;
-            font-family: Noto Sans Mono;
-        }
-
-        .grid-container {
-            display: grid;
-            grid-template-columns: 15% 70% 15%;
-            width: 100%;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-        }
-
-        @media screen and (max-width: 768px) {
-            .grid-container {
-                grid-template-columns: 10% 80% 10%;
-            }
-        }
-
-        @media screen and (max-width: 480px) {
-            .grid-container {
-                grid-template-columns: 5% 90% 5%;
-            }
-        }
-
-        @media screen and (max-width: 350px) {
-            .grid-container {
-                grid-template-columns: 3% 94% 3%;
-            }
-        }
-
-        /*HEADER*/
-        .header h1 {
-            padding-left: 10px;
-        }
-
-        .header a {
-            text-decoration: none;
-            color: black;
-            padding-left: 10px;
-        }
-
-        .header p {
-            padding-left: 10px;
-            color: rgb(130, 130, 130);
-        }
-
-        .header {
-            position: relative;
-            padding-top: 20px;
-            text-align: right;
-        }
-
-        .header img {
-            position: absolute;
-            top: 55px;
-            right: 10px;
-            height: 200px;
-            border-radius: 15px;
-            border: 2px solid rgb(130, 130, 130);
-        }
-
-        .header h1,
-        .header h2,
-        .header p {
-            text-align: left;
-            cursor: default;
-        }
-
-        @media screen and (max-width: 768px) {
-            .header h1 {
-                font-size: 20px;
-            }
-
-            .header p {
-                font-size: 12px;
-            }
-
-            .header img {
-                height: 160px;
-            }
-        }
-
-        @media screen and (max-width: 480px) {
-            .header h1 {
-                font-size: 18px;
-            }
-
-            .header p {
-                font-size: 10px;
-            }
-
-            .header img {
-                height: 140px;
-            }
-        }
-
-        @media screen and (max-width: 375px) {
-            .header h1 {
-                font-size: 17px;
-            }
-
-            .header p {
-                font-size: 9px;
-            }
-
-            .header img {
-                height: 130px;
-            }
-        }
-
-        /*ABOUT*/
-        .about h1 {
-            font-size: 17pt;
-            padding-left: 10px;
-            cursor: default;
-        }
-
-        .about p {
-            font-size: 10pt;
-            color: rgb(130, 130, 130);
-            padding-left: 10px;
-            padding-right: 10px;
-            cursor: default;
-        }
-
-        /*SKILLS*/
-        .skills h1 {
-            font-size: 17pt;
-            padding-left: 10px;
-            cursor: default;
-        }
-
-        .skills p {
-            cursor: default;
-            padding-left: 10px;
-        }
-
-        .skills p,
-        .skills a {
-            text-decoration: none;
-            font-size: 15pt;
-            color: rgb(130, 130, 130);
-        }
-
-        /*EXPERIENCE*/
-        .experience h1 {
-            font-size: 17pt;
-            padding-left: 10px;
-            cursor: default;
-        }
-
-        .experience h3 {
-            color: rgb(130, 130, 130);
-            font-size: 12pt;
-            padding-left: 10px;
-            cursor: default;
-        }
-
-        .experience h4 {
-            color: rgb(130, 130, 130);
-            font-size: 10pt;
-            padding-left: 30px;
-            cursor: default;
-        }
-
-        .experience p {
-            color: rgb(130, 130, 130);
-            font-size: 9pt;
-            padding-left: 30px;
-            padding-bottom: 5px;
-            padding-right: 10px;
-            cursor: default;
-        }
-
-        @media screen and (max-width: 768px) {
-            .experience h1 {
-                font-size: 14px;
-            }
-
-            .experience h3 {
-                font-size: 12px;
-            }
-
-            .experience h4,
-            .experience p {
-                font-size: 11px;
-            }
-        }
-
-
-        @media screen and (max-width: 480px) {
-            experience h1 {
-                font-size: 12px;
-            }
-
-            .experience h3 {
-                font-size: 11px;
-            }
-
-            .experience h4,
-            .experience p {
-                font-size: 10px;
-            }
-        }
-
-        @media screen and (max-width: 350px) {
-            .experience h1 {
-                font-size: 10px;
-            }
-
-            .experience h3 {
-                font-size: 10px;
-            }
-
-            .experience h4,
-            .experience p {
-                font-size: 9px;
-            }
-        }
-
-
-        /*EDUCATION*/
-        .education h1 {
-            font-size: 17pt;
-            padding-left: 10px;
-            cursor: default;
-        }
-
-        .education h3 {
-            color: rgb(130, 130, 130);
-            font-size: 12pt;
-            padding-left: 10px;
-            cursor: default;
-        }
-
-        .education h4 {
-            color: rgb(130, 130, 130);
-            font-size: 10pt;
-            padding-left: 30px;
-            cursor: default;
-        }
-
-        .education p {
-            color: rgb(130, 130, 130);
-            font-size: 9pt;
-            padding-left: 30px;
-            padding-bottom: 5px;
-            padding-right: 10px;
-            cursor: default;
-        }
-
-        @media screen and (max-width: 768px) {
-            .education h1 {
-                font-size: 14px;
-            }
-
-            .education h3 {
-                font-size: 12px;
-            }
-
-            .education h4,
-            .education p {
-                font-size: 11px;
-            }
-        }
-
-        @media screen and (max-width: 429px) {
-            education h1 {
-                font-size: 12px;
-            }
-
-            .education h3 {
-                font-size: 11px;
-            }
-
-            .education h4,
-            .education p {
-                font-size: 10px;
-            }
-        }
-
-        @media screen and (max-width: 350px) {
-            .education h1 {
-                font-size: 10px;
-            }
-
-            .education h3 {
-                font-size: 10px;
-            }
-
-            .education h4,
-            .education p {
-                font-size: 9px;
-            }
-        }
-
-        /*PROJECTS*/
-        .projects-grid {
-            display: grid;
-            grid-template-columns: 49% 49%;
-            gap: 10px;
-            padding-left: 10px;
-            padding-right: 10px;
-        }
-
-        .projects h1 {
-            font-size: 17pt;
-            padding-left: 10px;
-            cursor: default;
-        }
-
-        .replay,
-        .catchp,
-        .this {
-            margin: 0 auto;
-            border: 1px solid rgb(130, 130, 130);
-            border-radius: 5px;
-            padding: 10px;
-            box-sizing: border-box;
-            max-height: 150px;
-            overflow-y: auto;
-        }
-
-        .replay::-webkit-scrollbar,
-        .catchp::-webkit-scrollbar,
-        .this::-webkit-scrollbar {
-            width: 0px;
-        }
-
-        .replay a,
-        .catchp a,
-        .this a {
-            font-weight: bold;
-            font-size: 11pt;
-            color: black;
-            padding-left: 5px;
-        }
-
-        .rpt,
-        .cpt,
-        .thist {
-            color: rgb(130, 130, 130);
-            font-size: 9pt;
-            padding-left: 5px;
-            padding-right: 5px;
-            cursor: default;
-        }
-
-        .x {
-            text-align: center;
-        }
-
-        .x a {
-            text-decoration: none;
-            color: rgb(130, 130, 130);
-        }
-
-        .x p {
-            cursor: default;
-            color: rgb(130, 130, 130);
-        }
-
-        @media screen and (max-width: 768px) {
-            .projects-grid {
-                grid-template-columns: 100%;
-                /* Stack items in one column */
-            }
-        }
-
-        /*FOOTER*/
-        .footer p {
-            font-size: 9pt;
-            text-align: center;
-            color: rgb(130, 130, 130);
-        }
-
-        .footer a {
-            color: rgb(130, 130, 130);
-        }
+.noto-sans-mono {
+    font-family: "Noto Sans Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*GRID & BACKGROUND*/
+body {
+    background-image: url(bgimage.jpeg);
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
+    font-family: Noto Sans Mono;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 10% 80% 10%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 5% 90% 5%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .grid-container {
+        grid-template-columns: 3% 94% 3%;
+    }
+}
+
+/*HEADER*/
+.header h1 {
+    padding-left: 10px;
+}
+
+.header a {
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+}
+
+.header p {
+    padding-left: 10px;
+    color: rgb(130, 130, 130);
+}
+
+.header {
+    position: relative;
+    padding-top: 20px;
+    text-align: right;
+}
+
+.header img {
+    position: absolute;
+    top: 55px;
+    right: 10px;
+    height: 200px;
+    border-radius: 15px;
+    border: 2px solid rgb(130, 130, 130);
+}
+
+.header h1,
+.header h2,
+.header p {
+    text-align: left;
+    cursor: default;
+}
+
+@media screen and (max-width: 768px) {
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .header p {
+        font-size: 12px;
+    }
+
+    .header img {
+        height: 160px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header h1 {
+        font-size: 18px;
+    }
+
+    .header p {
+        font-size: 10px;
+    }
+
+    .header img {
+        height: 140px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .header h1 {
+        font-size: 17px;
+    }
+
+    .header p {
+        font-size: 9px;
+    }
+
+    .header img {
+        height: 130px;
+    }
+}
+
+/*ABOUT*/
+.about h1 {
+    font-size: 17pt;
+    padding-left: 10px;
+    cursor: default;
+}
+
+.about p {
+    font-size: 10pt;
+    color: rgb(130, 130, 130);
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: default;
+}
+
+/*SKILLS*/
+.skills h1 {
+    font-size: 17pt;
+    padding-left: 10px;
+    cursor: default;
+}
+
+.skills p {
+    cursor: default;
+    padding-left: 10px;
+}
+
+.skills p,
+.skills a {
+    text-decoration: none;
+    font-size: 15pt;
+    color: rgb(130, 130, 130);
+}
+
+/*EXPERIENCE*/
+.experience h1 {
+    font-size: 17pt;
+    padding-left: 10px;
+    cursor: default;
+}
+
+.experience h3 {
+    color: rgb(130, 130, 130);
+    font-size: 12pt;
+    padding-left: 10px;
+    cursor: default;
+}
+
+.experience h4 {
+    color: rgb(130, 130, 130);
+    font-size: 10pt;
+    padding-left: 30px;
+    cursor: default;
+}
+
+.experience p {
+    color: rgb(130, 130, 130);
+    font-size: 9pt;
+    padding-left: 30px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    cursor: default;
+}
+
+@media screen and (max-width: 768px) {
+    .experience h1 {
+        font-size: 14px;
+    }
+
+    .experience h3 {
+        font-size: 12px;
+    }
+
+    .experience h4,
+    .experience p {
+        font-size: 11px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    experience h1 {
+        font-size: 12px;
+    }
+
+    .experience h3 {
+        font-size: 11px;
+    }
+
+    .experience h4,
+    .experience p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .experience h1 {
+        font-size: 10px;
+    }
+
+    .experience h3 {
+        font-size: 10px;
+    }
+
+    .experience h4,
+    .experience p {
+        font-size: 9px;
+    }
+}
+
+
+/*EDUCATION*/
+.education h1 {
+    font-size: 17pt;
+    padding-left: 10px;
+    cursor: default;
+}
+
+.education h3 {
+    color: rgb(130, 130, 130);
+    font-size: 12pt;
+    padding-left: 10px;
+    cursor: default;
+}
+
+.education h4 {
+    color: rgb(130, 130, 130);
+    font-size: 10pt;
+    padding-left: 30px;
+    cursor: default;
+}
+
+.education p {
+    color: rgb(130, 130, 130);
+    font-size: 9pt;
+    padding-left: 30px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    cursor: default;
+}
+
+@media screen and (max-width: 768px) {
+    .education h1 {
+        font-size: 14px;
+    }
+
+    .education h3 {
+        font-size: 12px;
+    }
+
+    .education h4,
+    .education p {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 429px) {
+    education h1 {
+        font-size: 12px;
+    }
+
+    .education h3 {
+        font-size: 11px;
+    }
+
+    .education h4,
+    .education p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .education h1 {
+        font-size: 10px;
+    }
+
+    .education h3 {
+        font-size: 10px;
+    }
+
+    .education h4,
+    .education p {
+        font-size: 9px;
+    }
+}
+
+/*PROJECTS*/
+.projects-grid {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.projects h1 {
+    font-size: 17pt;
+    padding-left: 10px;
+    cursor: default;
+}
+
+.temp {
+    margin: 0 auto;
+    border: 1px solid rgb(130, 130, 130);
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.temp::-webkit-scrollbar {
+    width: 0px;
+}
+
+.temp a {
+    font-weight: bold;
+    font-size: 11pt;
+    color: black;
+    padding-left: 5px;
+}
+
+.txt {
+    color: rgb(130, 130, 130);
+    font-size: 9pt;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: default;
+}
+
+.x {
+    text-align: center;
+}
+
+.x a {
+    text-decoration: none;
+    color: rgb(130, 130, 130);
+}
+
+.x p {
+    cursor: default;
+    color: rgb(130, 130, 130);
+}
+
+@media screen and (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 100%;
+        /* Stack items in one column */
+    }
+}
+
+/*FOOTER*/
+.footer p {
+    font-size: 9pt;
+    text-align: center;
+    color: rgb(130, 130, 130);
+}
+
+.footer a {
+    color: rgb(130, 130, 130);
+}
     </style>
 </head>
 
@@ -431,7 +422,8 @@
             <div class="about">
                 <h1>About Me</h1>
                 <p>
-                    I am a high school senior with an interest in programming and trading. I hope to pursue a career in the
+                    I am a high school senior with an interest in programming and trading. I hope to pursue a career in
+                    the
                     intersection of Finance and Computer Science after college. As of now, though, I am preparing to
                     apply to computer science programs at several universities, and I am excited to see where my hard
                     work will lead me!
@@ -488,11 +480,12 @@
             <div class="projects">
                 <h1>Projects</h1>
                 <div class="projects-grid">
-                    <div class="replay">
-                        <a href="https://www.linkedin.com/company/replay-fm/">RePlay</a>
-                        <div class="rpt">
+                    <div class="temp">
+                        <a href="https://www.linkedin.com/company/replay-fm/">RePlay</a> <i
+                            class="fa-solid fa-thumbtack"></i>
+                        <div class="txt">
                             A Web application that gathers the genre information of each song in a Spotify playlist, and
-                            creates new playlists based off genre. Solves the problem of a large, messy playlist with
+                            creates new playlists based on genre. Solves the problem of a large, messy playlist with
                             songs that conflict with each other.
                         </div>
                         <div class="x">
@@ -503,23 +496,25 @@
                             </p>
                         </div>
                     </div>
-                    <div class="catchp">
-                        <a href="https://github.com/Aarav-Shukla/CatchingPlagiarists">Catching Plagiarists</a>
-                        <div class="cpt">
-                            Catching Plagiarists is a Java project that I completed for my Data Structures class at
-                            Barrington High School. This project is intended for use with three folders,
-                            each containing several documents to compare to each other. The code in this project
-                            would check for plagiarism in a user-selected directory. Some edits must be made to the FileClass and TesterClass files for personal use.
+
+                    <div class="temp">
+                        <a href="https://github.com/Aarav-Shukla/Frerelance-Work">Freelance Work</a> <i
+                            class="fa-solid fa-thumbtack"></i>
+                        <div class="txt">
+                            Created personal websites for myself, my peers, and others. These websites are mostly online
+                            resumes, however some are blogs.
                         </div>
                         <div class="x">
                             <p>
-                                | <a href="https://www.java.com/en/">Java <i class="fa-brands fa-java"></i></a> |
+                                <a href="https://www.learn-html.org/">HTML <i class="fa-brands fa-html5"></i></a> |
+                                <a href="https://www.learn-html.org/">CSS <i class="fa-brands fa-css3-alt"></i></a>
                             </p>
                         </div>
                     </div>
-                    <div class="this">
+
+                    <div class="temp">
                         <a href="https://github.com/Aarav-Shukla/aarav-shukla.github.io">This Website!</a>
-                        <div class="thist">
+                        <div class="txt">
                             This website is the first personal website I have ever made! I decided to create this on
                             6/20/2024, a rainy and boring day, and it took me 6 hours to do so. Not bad, Right?
                         </div>
@@ -530,6 +525,23 @@
                             </p>
                         </div>
                     </div>
+
+                    <div class="temp">
+                        <a href="https://github.com/Aarav-Shukla/CatchingPlagiarists">Catching Plagiarists</a>
+                        <div class="txt">
+                            Catching Plagiarists is a Java project that I completed for my Data Structures class at
+                            Barrington High School. This project is intended for use with three folders,
+                            each containing several documents to compare to each other. The code in this project
+                            would check for plagiarism in a user-selected directory. Some edits must be made to the
+                            FileClass and TesterClass files for personal use.
+                        </div>
+                        <div class="x">
+                            <p>
+                                | <a href="https://www.java.com/en/">Java <i class="fa-brands fa-java"></i></a> |
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
