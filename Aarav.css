@@ -84,7 +84,7 @@ body {
 
 @media screen and (max-width: 768px) {
     .header h1 {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .header p {
@@ -98,7 +98,7 @@ body {
 
 @media screen and (max-width: 480px) {
     .header h1 {
-        font-size: 18px;
+        font-size: 22px;
     }
 
     .header p {
@@ -112,7 +112,7 @@ body {
 
 @media screen and (max-width: 375px) {
     .header h1 {
-        font-size: 17px;
+        font-size: 20px;
     }
 
     .header p {
@@ -189,10 +189,6 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    .experience h1 {
-        font-size: 17px;
-    }
-
     .experience h3 {
         font-size: 12px;
     }
@@ -205,10 +201,6 @@ body {
 
 
 @media screen and (max-width: 480px) {
-    experience h1 {
-        font-size: 17px;
-    }
-
     .experience h3 {
         font-size: 11px;
     }
@@ -220,10 +212,6 @@ body {
 }
 
 @media screen and (max-width: 350px) {
-    .experience h1 {
-        font-size: 17px;
-    }
-
     .experience h3 {
         font-size: 10px;
     }
@@ -266,10 +254,6 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    .education h1 {
-        font-size: 17px;
-    }
-
     .education h3 {
         font-size: 12px;
     }
@@ -281,10 +265,6 @@ body {
 }
 
 @media screen and (max-width: 429px) {
-    education h1 {
-        font-size: 17px;
-    }
-
     .education h3 {
         font-size: 11px;
     }
@@ -296,10 +276,6 @@ body {
 }
 
 @media screen and (max-width: 350px) {
-    .education h1 {
-        font-size: 17px;
-    }
-
     .education h3 {
         font-size: 10px;
     }
