@@ -188,41 +188,6 @@ body {
     cursor: default;
 }
 
-@media screen and (max-width: 768px) {
-    .experience h3 {
-        font-size: 12px;
-    }
-
-    .experience h4,
-    .experience p {
-        font-size: 11px;
-    }
-}
-
-
-@media screen and (max-width: 480px) {
-    .experience h3 {
-        font-size: 11px;
-    }
-
-    .experience h4,
-    .experience p {
-        font-size: 10px;
-    }
-}
-
-@media screen and (max-width: 350px) {
-    .experience h3 {
-        font-size: 10px;
-    }
-
-    .experience h4,
-    .experience p {
-        font-size: 9px;
-    }
-}
-
-
 /*EDUCATION*/
 .education h1 {
     font-size: 17pt;
