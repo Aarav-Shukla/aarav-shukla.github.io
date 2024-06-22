@@ -218,39 +218,6 @@ body {
     cursor: default;
 }
 
-@media screen and (max-width: 768px) {
-    .education h3 {
-        font-size: 12px;
-    }
-
-    .education h4,
-    .education p {
-        font-size: 11px;
-    }
-}
-
-@media screen and (max-width: 429px) {
-    .education h3 {
-        font-size: 11px;
-    }
-
-    .education h4,
-    .education p {
-        font-size: 10px;
-    }
-}
-
-@media screen and (max-width: 350px) {
-    .education h3 {
-        font-size: 10px;
-    }
-
-    .education h4,
-    .education p {
-        font-size: 9px;
-    }
-}
-
 /*PROJECTS*/
 .projects-grid {
     display: grid;
