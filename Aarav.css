@@ -190,7 +190,7 @@ body {
 
 @media screen and (max-width: 768px) {
     .experience h1 {
-        font-size: 14px;
+        font-size: 17px;
     }
 
     .experience h3 {
@@ -206,7 +206,7 @@ body {
 
 @media screen and (max-width: 480px) {
     experience h1 {
-        font-size: 12px;
+        font-size: 17px;
     }
 
     .experience h3 {
@@ -221,7 +221,7 @@ body {
 
 @media screen and (max-width: 350px) {
     .experience h1 {
-        font-size: 10px;
+        font-size: 17px;
     }
 
     .experience h3 {
@@ -267,7 +267,7 @@ body {
 
 @media screen and (max-width: 768px) {
     .education h1 {
-        font-size: 14px;
+        font-size: 17px;
     }
 
     .education h3 {
@@ -282,7 +282,7 @@ body {
 
 @media screen and (max-width: 429px) {
     education h1 {
-        font-size: 12px;
+        font-size: 17px;
     }
 
     .education h3 {
@@ -297,7 +297,7 @@ body {
 
 @media screen and (max-width: 350px) {
     .education h1 {
-        font-size: 10px;
+        font-size: 17px;
     }
 
     .education h3 {
